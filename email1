@@ -1,0 +1,15 @@
+pipeline{
+agent any
+stages{
+stage('build'){ 
+steps {
+echo "Rajesh Kumar building a jenkins email project"
+}
+}
+post { 
+success { 
+emailext body: 'Email sent from Jenkins', subject: 'email test', to: '1295rks@gmail.com'
+}
+}
+}
+}
