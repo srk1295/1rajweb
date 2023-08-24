@@ -1,0 +1,15 @@
+pipeline { 
+  agent any
+    stages { 
+      stage('Email'){
+         steps{
+              echo "email created hence need to confirm" 
+        }
+    }
+  }
+        post{
+          success {
+              emailext body: 'email sent or failure confirmation ', subject: 'email verification', to: 'srk1295@gmail.com'
+}
+}
+}
