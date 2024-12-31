@@ -1,0 +1,47 @@
+How to pull file.tar.gz  from local to github repo....explain there detail steps...!
+=======================================================================================
+
+To pull a tar.gz file from your local machine to GitHub, you'll need to follow these steps:
+
+1. Create a new repository on GitHub or navigate to an existing one.
+2. Create a new directory in your local machine to store the tar.gz file.
+3. Copy the tar.gz file to the local directory.
+4. Initialize a Git repository in the local directory by running the command:
+```
+git init
+```
+5. Add the tar.gz file to the Git repository by running the command:
+```
+git add <filename>.tar.gz
+```
+Replace `<filename>` with the actual name of the tar.gz file.
+
+6. Commit the changes by running the command:
+```
+git commit -m "Initial commit"
+```
+7. Link your local repository to the GitHub repository by running the command:
+```
+git remote add origin <github-repo-url>
+```
+Replace `<github-repo-url>` with the URL of your GitHub repository.
+
+8. Push the changes to the GitHub repository by running the command:
+```
+git push -u origin master
+```
+This will upload the tar.gz file to your GitHub repository.
+
+===================================
+Here's a summary of the commands:
+===================================
+
+1. `git init`
+2. `git add <filename>.tar.gz`
+3. `git commit -m "Initial commit"`
+4. `git remote add origin <github-repo-url>`
+5. `git push -u origin master`
+
+Note: Make sure to replace `<github-repo-url>` with the actual URL of your GitHub repository.
+
+
